@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "bdc0b46236d5c837",
+    "type": "split",
+    "children": [
+      {
+        "id": "02e8c874c48e4d6f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0c86cab45078bc84",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "账号.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "账号"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a7d7fa7c70556f04",
+    "type": "split",
+    "children": [
+      {
+        "id": "1c89dab782428f58",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb96a54284e5687c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "5598636f6907ba92",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "账号",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "cb3405cae964f224",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 356.5
+  },
+  "right": {
+    "id": "1d7abc40e6dc8876",
+    "type": "split",
+    "children": [
+      {
+        "id": "0361ac139f4ef1ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c23e89e9248fb853",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CS/前端/JavaScript/async function - JavaScript  MDN.pdf",
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "async function - JavaScript  MDN 的反向链接列表"
+            }
+          },
+          {
+            "id": "b881fe7f0cc66ee4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CS/前端/JavaScript/async function - JavaScript  MDN.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "async function - JavaScript  MDN 的出链列表"
+            }
+          },
+          {
+            "id": "5976a75656125139",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "2023640bc0cd3d6c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CS/前端/JavaScript/async function - JavaScript  MDN.pdf",
+                "followCursor": true,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "async function - JavaScript  MDN 的大纲"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 242.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "0c86cab45078bc84",
+  "lastOpenFiles": [
+    "工作/上东/问题记录.md",
+    "工作/上东/工作中遇到的问题.md",
+    "工作/上东/集采.md",
+    "收藏/片段.md",
+    "想法.md",
+    "todo.md",
+    "账号.md",
+    "临时.md",
+    "工作/上东/上东.md",
+    "CS/MySQL/查看事务.md",
+    "CS/MySQL",
+    "CS/nginx/nginx快速入门.md",
+    "CS/前端/JavaScript/Promise - JavaScript  MDN.pdf",
+    "CS/前端/JavaScript/async function - JavaScript  MDN.pdf",
+    "CS/前端/JavaScript/26805f1a7b154ae8ac8640fe8b3d1231/ad251d14c3c74bb2a6654cd5942f5232.pdf",
+    "CS/前端/JavaScript/26805f1a7b154ae8ac8640fe8b3d1231",
+    "CS/前端/JavaScript/0e08aa7d2fb74de79be863e52cb08e5c/26a7f6d1558b4bcab2d2abbe6ad669c7.pdf",
+    "CS/前端/JavaScript/0e08aa7d2fb74de79be863e52cb08e5c",
+    "购物/我的身体数据.md",
+    "购物",
+    "工作/上东/Maven配置.md",
+    "工作/上东/核心企业系统分润相关.md",
+    "图片/-uM0YxWNxt7IVPunZ2TiZvb8boPv1i-js124Jt_icJ0.png",
+    "面试/问题.md",
+    "图片/98c739cdb932b715cca39e8f1da3d27.jpg",
+    "图片/eee1cf79c423792e6d2176ecaf899ae.jpg",
+    "图片/Pasted image 20250514215658.png",
+    "AI/RVC/RVC部署.md",
+    "AI/RVC",
+    "AI",
+    "图片/LkBuYKZSQ9cxp4OM0YHwzq0JOZT1EhVzchpwDgtwsL8.png",
+    "CS/前端/JavaScript/Promise文章.md",
+    "CS/前端/Vue/vue的v-for循环key属性为什么不能用index？以上代码运行后，渲染出来是这样的： 然后我们给list的末尾加一 - 掘金.md",
+    "2025-05-05.md",
+    "Clippings/Promise - JavaScript  MDN.md",
+    "Clippings/async function - JavaScript  MDN.md",
+    "Clippings/Promise - JavaScript _ MDN.md",
+    "欢迎.md",
+    "Clippings/事件循环 - JavaScript  MDN.md",
+    "annotation.md",
+    "language.md"
+  ]
+}
