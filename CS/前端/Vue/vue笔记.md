@@ -8,14 +8,24 @@ app.mount('#app')
 在网站上动态渲染任意 HTML 是非常危险的，因为这非常容易造成 [XSS 漏洞](https://zh.wikipedia.org/wiki/%E8%B7%A8%E7%B6%B2%E7%AB%99%E6%8C%87%E4%BB%A4%E7%A2%BC)。请仅在内容安全可信时再使用 `v-html`，并且**永远不要**使用用户提供的 HTML 内容。
 
 
+[布尔型 attribute](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Attributes#%E5%B8%83%E5%B0%94%E5%80%BC%E5%B1%9E%E6%80%A7) 依据 true / false 值来决定 attribute 是否应该存在于该元素上。[`disabled`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled) 就是最常见的例子之一。`v-bind` 在这种场景下的行为略有不同：
+```
+<button :disabled="isButtonDisabled">Button</button>
+```
+当 `isButtonDisabled` 为[真值](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)或一个空字符串 (即 `<button disabled="">`) 时，元素会包含这个 `disabled` attribute。而当其为其他[假值](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)时 attribute 将被忽略。
+
+
 在 Vue 模板内，JavaScript 表达式可以被使用在如下场景上：
 	1. 在文本插值中 (双大括号)
 	2. 在任何 Vue 指令 (以 `v-` 开头的特殊 attribute) attribute 的值中
 
 
+绑定在表达式中的方法在组件每次更新时都会被**重新调用**，因此**不**应该产生任何副作用，比如改变数据或触发异步操作。
+
+	
 当使用 DOM 内嵌模板 (直接写在 HTML 文件里的模板) 时，我们需要避免在名称中使用大写字母，因为浏览器会强制将其转换为小写：
 ```Plain Text
-<a :[someAttr]="value"> ... </a>
+<a :[someAttr]="value"> ... </a>  会被转换为:[someattr]
 ```
 
 
@@ -42,4 +52,15 @@ const proxy = reactive({})
 const raw = {}
 proxy.nested = raw
 console.log(proxy.nested === raw) // false
+```
+
+
+计算属性会被缓存，只有在其响应式依赖改变时才会重新计算；方法调用**总是**会在重渲染发生时再次执行函数。
+**不要在计算属性中改变其他状态、做异步请求或者更改 DOM**
+
+
+在计算属性中使用 `reverse()` 和 `sort()` 的时候务必小心！这两个方法将变更原始数组，计算函数中不应该这么做。请在调用这些方法之前创建一个原数组的副本：
+``` js
+- return numbers.reverse()
++ return [...numbers].reverse()
 ```
