@@ -64,3 +64,6 @@ console.log(proxy.nested === raw) // false
 - return numbers.reverse()
 + return [...numbers].reverse()
 ```
+
+
+`watchEffect` 仅会在其**同步**执行期间，才追踪依赖。在使用异步回调时，只有在第一个 `await` 正常工作前访问到的属性才会被追踪。
